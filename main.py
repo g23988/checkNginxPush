@@ -29,7 +29,7 @@ targetpath = "/"
 def get_html_code(host,path=targetpath):
 
         try:
-                data = urllib.urlencode({"test":"ok"})
+                data = urllib.urlencode({messageIndex:messageText})
                 response = urllib2.urlopen("http://"+host+"/pub?id="+id,data)
                 html = response.read()
                 return html;
